@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Adivinhação com Posições</title>
+    <script src="Resposta.js" defer></script>
+</head>
+<body>
+    <h1>Tente adivinhar os 4 números</h1>
+    <p>Insira números entre 0 e 9:</p>
+
+    <form onsubmit="Resposta(event)">
+        <input type="number" id="numero1" name="numero1" min="0" max="9" required>
+        <input type="number" id="numero2" name="numero2" min="0" max="9" required>
+        <input type="number" id="numero3" name="numero3" min="0" max="9" required>
+        <input type="number" id="numero4" name="numero4" min="0" max="9" required>
+        <br><br>
+        <input type="submit" id="verificar" value="Verificar">
+    </form>
+
+    <p id="id">Você tem <strong>5 tentativas</strong> para acertar os 4 números.</p>
+</body>
+</html>
